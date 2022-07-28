@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="normal/base::layout(~{::section})">
+<head>
+	<meta charset="UTF-8" />
+	<title>This is home page1</title>
+</head>
+<body>
+	<section>
+		<div class="container">
+		
+			<div class="card">
+			
+				<div class="card-body text-center">
+			
+				<div class="container" >
+				
+					<img 
+						src="" 
+						style="height:200px; width:200px;"
+						class="my_profile_picture" 
+						th:src="@{'/image/'+employee.jpg}" 
+						alt="profile photo" />
+						
+				</div>
+				
+				<h2 class="text-center text-secondary font-italic">Start Adding employee details</h2>
+				
+				
+				<a href="#" th:href="@{/user/add-employee}" class="btn btn-primary mt-4 btn-bock text-uppercase">Add new employee</a>
+				
+			
+			</div>
+			
+			</div>
+			
+		
+		</div>
+	</section>
+</body>
+</html>

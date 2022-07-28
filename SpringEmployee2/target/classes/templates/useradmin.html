@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="base::layout(~{::section})">
+<head>
+	<meta charset="UTF-8" />
+	<title>This is home page1</title>
+</head>
+<body>
+	<section>
+		<div class="container text-center">
+			<h1>Please click USER if you have logged in a user</h1>
+			<h1>Please click ADMIN if you have logged in a admin</h1>
+		</div>
+		
+		
+		<div class="container text-center">
+			<a class="btn btn-primary" href="#" role="button" th:href="@{/user/index}">USER</a>
+			<a class="btn btn-primary" href="#" role="button" th:href="@{/admin/index}">ADMIN</a>
+		</div>
+
+		<div class="container text-center mt-10">
+			
+		</div>
+		
+	</section>
+</body>
